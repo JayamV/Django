@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.urls import reverse
 
 def index(request):
     return HttpResponse("hello guys")
@@ -11,7 +12,7 @@ def jayam(request):
     return HttpResponse("<html><body><h1>JAYAM</h1></body></html>")
 
 def old_link(request):
-    return redirect(new_link)
+    return redirect(reverse('new_link'))
 
 def new_link(request):
     return HttpResponse("This is the new link destination.")

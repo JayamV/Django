@@ -6,5 +6,5 @@ urlpatterns=[
     path('jayam/', views.jayam, name='jayam'),
     path('detail/<int:post_id>', views.detail, name='detail_with_id'),
     path('old_link/', views.old_link, name='old_link'),
-    path('new_link/', views.new_link, name='new_link'),
+    path('new_link_something/', views.new_link, name='new_link'),
 ]
